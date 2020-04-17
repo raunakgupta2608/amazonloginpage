@@ -1,0 +1,247 @@
+.*
+{
+	padding:0;
+	margin:0;
+	border:none;
+	box-sizing: border-box;
+}
+
+.container
+{
+	width:50%;
+	height:90%;
+	display:inline-block;
+	margin-left:25%;
+	//border:1px solid black;
+}
+.image
+{
+	display:block;
+	width:30%;
+        height:12%;
+	margin-left:35%;
+	background-image:url("logo1.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	//border:1px solid black;
+}
+
+.smallcon
+{
+	width:50%;
+	height:90%;
+	border:0.08px solid lightgrey;
+	margin-left:25%;
+	//border-radius:0.2px;
+}
+
+.heading
+{
+	width:100%;
+	height:9%;
+	
+}
+.create
+{
+	font-family:Sans-serif;
+	padding-left:10px;
+	font-weight:bold;
+	font-size:30px;
+	margin-top:10px;
+}
+.name
+{
+	width:100%;
+	height:15%;
+	font-family:Sans-serif;
+}
+.nameinp,input[type=text]
+{
+	padding-top:0px;
+	font-family:Sans-serif;
+	padding-left:10px;
+	font-size:15px;
+	border-radius:4px;
+	width:95%;
+	height:65%;
+}
+input[type=text]
+{
+	margin-top:0px;
+	border:1.5px solid lightgrey;
+}
+
+.usererr
+{
+	width:100%;
+	height:15%;
+	font-family:Sans-serif;
+}
+
+
+.mobile
+{
+	width:100%;
+	height:15%;
+	font-family:Sans-serif;
+}
+.mobinp,input[type=rel]
+{
+	padding-top:0px;
+	font-family:Sans-serif;
+	padding-left:10px;
+	font-size:15px;
+	border-radius:4px;
+	width:95%;
+	height:65%;
+}
+.com
+{}
+.combo
+{
+	background-color:#D3D3D3;
+	border-radius:2.5px;
+	border:2px solid lightgrey;
+	height:60%;
+}
+
+input[type=tel]
+{
+	height:65%;
+	width:70%;
+	margin-top:0px;
+	border:1.5px solid lightgrey;
+	border-radius:4px;
+}
+.email
+{
+	width:100%;
+	height:15%;
+	font-family:Sans-serif;
+}
+.emailinp,input[type=text]
+{
+	padding-top:0px;
+	font-family:Sans-serif;
+	padding-left:10px;
+	font-size:15px;
+	border-radius:4px;
+	width:95%;
+	height:65%;
+}
+input[type=text]
+{
+	margin-top:0px;
+	border:1.5px solid lightgrey;
+}
+
+input[type=text]:blur 
+{
+	border:1px solid orange;
+}
+
+.pass
+{
+	width:100%;
+	height:18%;
+	font-family:Sans-serif;
+
+}
+.passinp,input[type=password]
+{
+	padding-top:0px;
+	font-family:Sans-serif;
+	padding-left:10px;
+	font-size:15px;
+	border-radius:4px;
+	width:95%;
+	height:58%;
+}
+input[type=password]
+{
+	margin-top:0px;
+	border:1.5px solid lightgrey;
+}
+.note
+{
+	width:90%;
+	height:5%;
+	font-family:Sans-serif;
+	padding-left:10px;
+	line-height:30px;
+	font-size:13px;
+}
+.message
+{
+	margin-top:0%;
+	width:90%;
+	height:10%;
+	font-size:14px;
+	line-height:20px;
+	
+	padding-left:10px;
+	font-family:Sans-serif;
+	//border:1px solid black;
+	
+}
+.button
+{
+	padding-left:10px;
+	width:99%;
+	overflow:hidden;
+	//border:1px solid red;
+}
+.submit
+{
+	
+	//background:#f4c430;
+	background-image: linear-gradient(to bottom, white 5%,#f4c430 20%);
+	width:91%;
+	height:5%;
+	border:0.6px solid lightgrey;
+	border-radius:4px;
+}
+.hr
+{
+	height:10%;
+	width:100%;
+	//border:1px solid green;
+}
+.hr hr
+{
+	margin-top:20px;
+}
+.already
+{
+	width:100%;
+	height:5%;
+	//border:1px solid black;
+	padding-left:10px;
+	font-family:Sans-serif;
+	font-size:13px;
+}
+a
+{
+	font-family:Sans-serif;
+	underline:none;
+	list-style-type:none;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

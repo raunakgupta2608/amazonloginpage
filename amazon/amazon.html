@@ -1,0 +1,169 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="amazon.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container">
+<form id="form" method="post" action="#"> 
+	<div class="image">
+	</div>
+	<div class="smallcon">
+		<div class="heading">
+			<p class="create">Create Account</p>
+		</div>
+		<div class="name">
+			<div class="nameinp">Your name
+				<input  type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="username">
+			</div>
+			<div class="usererr"></div>
+		</div>
+		<div class="mobile">
+			<div class="mobinp">Mobile number
+				<div class="com">
+				<select class="combo" id="ext">
+  					<option value="+91">+91(IN)</option>
+  					<option value="+81">+81(US)</option>
+  					<option value="+57">+57(UK)</option>
+  					<option value="+99">+99(AS)</option>
+				</select>
+				<input type="tel" id="mobile">
+				</div>
+				<div class="mobileerr"></div>
+			</div>
+		</div>
+		<div class="email">
+			<div class="emailinp">Email(optional)
+				<input  type="text" id="email">
+			</div>
+			<div class="emailerr"></div>
+		</div>
+		<div class="pass">
+			<div class="passinp">Password
+				<input  type="password" id="password">
+			</div>
+			<div class="passerr"></div>
+			<div class="note">i Passwords must be atleast 6 character	
+			</div>
+		</div>
+		<div class="message">We will send you a text to verify your phone.<br>
+				     Message and Data rates may apply.	
+		</div>
+		<div class="button">
+			<button type="submit" class="submit" id="submit" >Continue</button>
+		</div>
+		<div class="hr">
+			<hr></hr>
+			<div class="already">Already have an account?
+			<a href="#" id="sign">Sign in</a> 
+			</div>
+		</div>
+		
+	</div>
+</form>
+</div>
+<script>
+	$(document).ready(function(){
+		$("#submit").click(function(){
+			var user = $("#username").val();
+			var mobile = $("#mobile").val();
+			var email = $("#email").val();
+			var password = $("#password").val();
+
+			if(user=="")
+			{
+				$(".usererr").html("** The username must be filled.");
+				$('.usererr').css('color', 'red');
+				return false;
+			}
+			if((user.length<=2) || (user.length>10))
+			{
+				$(".usererr").html("** Username must be between 3-8 characters.");
+				$('.usererr').css('color', 'red');
+				return false;
+			}
+			if(mobile=="")
+			{
+				$(".mobileerr").html("** The mobile number must be filled.");
+				$('.mobileerr').css('color', 'red');
+				return false;
+			}
+			if((mobile.length<10) || (mobile.length>10))
+			{
+				$(".mobileerr").html("** Mobile must be between 10 characters.");
+				$('.mobileerr').css('color', 'red');
+				return false;
+			}
+			if(email=="")
+			{
+				$(".emailerr").html("** The email must be filled.");
+				$('.emailerr').css('color', 'red');
+				return false;
+			}
+			var em = new RegExp(^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$);
+			var bol = em.test(email);
+			alert(bol);
+			if(!bol)
+			{
+				$(".emailerr").html("** Enter valid email-id.");
+				$('.emailerr').css('color', 'red');
+				return false;
+			}
+			if(password=="")
+			{
+				$(".passerr").html("** The password must be filled.");
+				$('.passerr').css('color', 'red');
+				return false;
+			}
+			if((password.length<6) || (password.length>12))
+			{
+				$(".passerr").html("** Password must be atleast 6 characters.");
+				$('.passerr').css('color', 'red');
+				return false;
+			}
+		});
+	});
+</script>
+<!--$("#username").blur(function(){
+			var user = $("#username").val();
+			if(user=="")
+			{
+				$(".usererr").html("** The username must be filled.");
+				$('.usererr').css('color', 'red');
+				return false;
+			}
+			if((user.length<=2) || (user.length>8))
+			{
+				$(".usererr").html("** The username must be between 3 and 8 character.");
+				$('.usererr').css('color', 'red');
+				return false;
+			}
+		});
+		$("#mobile").blur(function(){
+			var mobile = $("#mobile").val();
+			if(mobile=="")
+			{
+				$(".mobileerr").html("** The mobile number must be filled.");
+				$('.mobileerr').css('color', 'red');
+				return false;
+			}
+		});
+		$("#email").blur(function(){
+			var email = $("#email").val();
+			if(email=="")
+			{
+				$(".emailerr").html("** The email must be filled.");
+				$('.emailerr').css('color', 'red');
+				return false;
+			}
+		});-->
+
+</body>
+
+
+</html>
+
